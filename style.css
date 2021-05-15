@@ -55,12 +55,12 @@ body {
     min-height: 99px;
 }
 
-.bannedTowns {
+.unusedTowns {
     margin-top: 10px;
     display: flex;
 }
 
-.bannedTowns img:last-child {
+.unusedTowns img:last-child {
     margin-left: auto;
 }
 

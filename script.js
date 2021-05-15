@@ -46,20 +46,20 @@ function addPlayer(name) {
 
 }
 
-function addBannedTowns() {
+function addUnusedTowns() {
     var span = document.createElement('span');
     span.className = "title"
-    span.innerHTML += 'Banned Towns';
+    span.innerHTML += 'Unused Towns';
     content.appendChild(span);
-    var bannedTowns = document.createElement('div');
-    bannedTowns.className = 'bannedTowns';
-    addBannedTown(bannedTowns);
-    addBannedTown(bannedTowns);
-    content.appendChild(bannedTowns);
+    var unusedTowns = document.createElement('div');
+    unusedTowns.className = 'unusedTowns';
+    addUnusedTown(unusedTowns);
+    addUnusedTown(unusedTowns);
+    content.appendChild(unusedTowns);
 }
 
-function addBannedTown(div) {
-    var town = createImg(selectRandom(towns)[0].town)
+function addUnusedTown(div) {
+    var town = createImg(selectRandom(towns)[0].town);
     town.className = "town";
     div.appendChild(town);
 }
@@ -70,5 +70,5 @@ function main() {
         addPlayer(players[i]);
     }
 
-    addBannedTowns()
+    addUnusedTowns();
 }
