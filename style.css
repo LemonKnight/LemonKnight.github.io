@@ -1,0 +1,69 @@
+@font-face {
+    font-family: bitter;
+    src: url(/assets/Bitter-VariableFont_wght.ttf);
+}
+
+body {
+    background-image: url(/assets/advmap_fill.webp);
+    background-repeat: repeat;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1240;
+    height: 930px;
+    background-image: url(/assets/spellbook.webp);
+    background-size: cover;
+}
+
+.content {
+    font-size: 16px;
+    color: white;
+    margin-top: 74px;
+    margin-left: 152px;
+    width: 936px;
+    height: 626px;
+    font-family: bitter;
+}
+
+.colorFlag {
+    min-height: 99px;
+    margin: 10px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.player img:last-child {
+    margin-left: auto;
+}
+
+.town {
+    max-height: 180px;
+}
+
+.hero {
+    margin: 10px;
+    min-height: 99px;
+}
+
+.bannedTowns {
+    margin-top: 10px;
+    display: flex;
+}
+
+.bannedTowns img:last-child {
+    margin-left: auto;
+}
+
+.title {
+    font-size: 20;
+}
