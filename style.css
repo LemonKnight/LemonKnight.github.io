@@ -60,7 +60,8 @@ body {
     display: flex;
 }
 
-.unusedTowns img:last-child {
+.unusedTowns img {
+    width: 32%;
     margin-left: auto;
 }
 

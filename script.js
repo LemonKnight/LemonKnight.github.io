@@ -9,7 +9,8 @@ var towns = [
     {town: '07-stronghold.png', hero: '07-stronghold-hero.png'}, 
     {town: '08-fortress.png', hero: '08-fortress-hero.png'}, 
     {town: '09-conflux.png', hero: '09-conflux-hero.png'}, 
-    {town: '10-cove.png', hero: '10-cove-hero.png'}
+    {town: '10-cove.png', hero: '10-cove-hero.png'},
+    {town: '11-factory.png', hero: '11-factory-hero.png'}
 ];
 var colors = ['01-red.webp', '02-blue.webp', '03-tan.webp', '04-green.webp', '05-orange.webp', '06-purple.webp', '07-teal.webp', '08-pink.webp']
 var content = document.getElementsByClassName('content')[0];
@@ -53,6 +54,7 @@ function addUnusedTowns() {
     content.appendChild(span);
     var unusedTowns = document.createElement('div');
     unusedTowns.className = 'unusedTowns';
+    addUnusedTown(unusedTowns);
     addUnusedTown(unusedTowns);
     addUnusedTown(unusedTowns);
     content.appendChild(unusedTowns);
